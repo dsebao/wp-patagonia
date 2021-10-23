@@ -1,0 +1,28 @@
+{
+  "name": "patagonia",
+  "version": "1.0.0",
+  "description": "WordPress Block based theme",
+  "main": "webpack.mix.js",
+  "scripts": {
+    "dev": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "production": "mix --production"
+  },
+  "keywords": [
+    "wordpress",
+    "gutenberg",
+    "block",
+    "theme"
+  ],
+  "author": "@dsebao",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "laravel-mix": "^6.0.34",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.43.3",
+    "sass-loader": "^12.2.0"
+  }
+}

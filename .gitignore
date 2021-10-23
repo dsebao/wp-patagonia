@@ -1,0 +1,13 @@
+.DS_Store
+dist/
+
+.sass-cache
+style.css.map
+node_modules/
+**/.sass-cache
+cache
+error_log
+sitemap.xml
+sitemap.xml.gz
+.ftpquota
+.well-known 
