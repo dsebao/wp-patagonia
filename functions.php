@@ -1,9 +1,12 @@
 <?php
 
 if (!function_exists('patagonia_support')) :
-    function patagonia_support() {
+    function patagonia_support()
+    {
         // Adding support for featured images.
         add_theme_support('post-thumbnails');
+
+        add_theme_support('align-wide');
 
         // Adding support for core block visual styles.
         add_theme_support('wp-block-styles');
@@ -14,10 +17,13 @@ if (!function_exists('patagonia_support')) :
         // Add support for editor styles.
         add_theme_support('editor-styles');
 
+        wp_register_style('google-fonts', patagonia_get_google_fonts_url());
+
         // Enqueue editor styles.
         add_editor_style(
             array(
                 './dist/editor.css',
+                patagonia_get_google_fonts_url()
             )
         );
 

@@ -11,6 +11,12 @@
 		}
 	],
 	"settings": {
+		"border": {
+			"customColor": true,
+			"customRadius": true,
+			"customStyle": true,
+			"customWidth": true
+		},
 		"color": {
 			"link": true,
 			"gradient": false,
@@ -71,8 +77,13 @@
 			]
 		},
 		"layout": {
-			"contentSize": "1170px",
+			"contentSize": "1200px",
 			"wideSize": "1440px"
+		},
+		"custom": {
+			"spacing": {
+				"baseline": "16px"
+			}
 		}
 	},
 	"styles": {
