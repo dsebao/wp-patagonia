@@ -1,0 +1,99 @@
+{
+    "version": 1,
+	"templateParts": [
+		{
+			"name": "header",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"area": "footer"
+		}
+	],
+	"settings": {
+		"color": {
+			"link": true,
+			"gradient": false,
+			"palette": [
+				{
+					"slug": "dark",
+					"color": "#273B3B",
+					"name": "Dark"
+				},
+				{
+					"slug": "white",
+					"color": "#FFFFFF",
+					"name": "White"
+				},
+				{
+					"slug": "gray",
+					"color": "#516365",
+					"name": "Gray"
+				},
+				{
+					"slug": "green",
+					"color": "#3BA974",
+					"name": "Green"
+				},
+				{
+					"slug": "land",
+					"color": "#B79A4E",
+					"name": "Land"
+				},
+				{
+					"slug": "light-green",
+					"color": "#ECF6F0",
+					"name": "Light Green"
+				},
+				{
+					"slug": "light-land",
+					"color": "#F5F0E3",
+					"name": "Light Land"
+				}
+			]
+		},
+		"typography": {
+			"customFontSize": true,
+			"customLineHeight": true,
+			"fontFamilies": [
+				{
+					"fontFamily": "\"Rubik\", sans-serif",
+					"slug": "rubik",
+					"name": "Rubik",
+					"google": "family=Rubik:wght@300;400;500;700"
+				},
+				{
+					"fontFamily": "\"Domine\", serif",
+					"slug": "domine",
+					"name": "Domine",
+					"google": "family=Domine:wght@400;700"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "1170px",
+			"wideSize": "1440px"
+		}
+	},
+	"styles": {
+		"blocks": {
+			"core/paragraph": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--rubik)",
+					"lineHeight": "calc( 1em + 10px )"
+				},
+				"color": {
+					"text": "var(--wp--preset--color--gray)"
+				}
+			},
+			"core/heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--domine)"
+				},
+				"color": {
+					"text": "var(--wp--preset--color--dark)"
+				}
+			}
+		}
+	}
+}
