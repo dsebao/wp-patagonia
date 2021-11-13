@@ -4,6 +4,10 @@
  * https://github.com/WordPress/gutenberg/issues/35934
  */
 
+html {
+	font-size: 18px;
+}
+
 body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
@@ -37,6 +41,12 @@ a {
 
 	:active {
 		text-decoration: none;
+	}
+}
+
+header {
+	.wp-block-columns {
+		margin-bottom: 0;
 	}
 }
 

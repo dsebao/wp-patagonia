@@ -8,14 +8,9 @@ if (!function_exists('patagonia_support')) :
 
         add_theme_support('align-wide');
 
-        // Adding support for core block visual styles.
-        add_theme_support('wp-block-styles');
-
-        // Adding support for responsive embedded content.
-        add_theme_support('responsive-embeds');
-
-        // Add support for editor styles.
         add_theme_support('editor-styles');
+
+        add_theme_support('wp-block-styles');
 
         wp_register_style('google-fonts', patagonia_get_google_fonts_url());
 
@@ -68,7 +63,7 @@ if (!function_exists('patagonia_get_google_fonts_url')) :
         }
 
         // Return a single request URL for all of the font families.
-        return apply_filters('patagonia_google_fonts_url', esc_url('https://fonts.googleapis.com/css2?' . implode('&', $font_family_urls) . '&display=swap'));
+        return apply_filters('patagonia_google_fonts_url', esc_url_raw('https://fonts.googleapis.com/css2?' . implode('&amp;', $font_family_urls) . '&display=swap'));
     }
 endif;
 
