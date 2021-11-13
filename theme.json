@@ -1,5 +1,6 @@
 {
-    "version": 1,
+	"$schema": "https://json.schemastore.org/theme-v1.json",
+  "version": 1,
 	"templateParts": [
 		{
 			"name": "header",
@@ -19,7 +20,6 @@
 		},
 		"color": {
 			"link": true,
-			"gradient": false,
 			"palette": [
 				{
 					"slug": "dark",
