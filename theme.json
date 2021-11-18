@@ -52,11 +52,13 @@
 				}
 			]
 		},
-		"typography": {
+		"typography": {	
 			"dropCap": true,
 			"lineHeight": true,
 			"customFontSize": true,
+			"customFontStyle": true,
 			"customLineHeight": true,
+			"customTextTransforms": true,
 			"fontFamilies": [
 				{
 					"fontFamily": "\"Rubik\", sans-serif",
@@ -109,7 +111,7 @@
 			]
 		},
 		"layout": {
-			"contentSize": "1000px",
+			"contentSize": "1200px",
 			"wideSize": "1400px"
 		},
 		"spacing": {
@@ -184,6 +186,28 @@
               "left": "40px"
           }
         }
+			},
+			"core/separator": {
+				"spacing": {
+					"margin": {
+						"left": "0",
+						"right": "0",
+						"bottom": "20px"
+					}
+				}
+			},
+			"core/post-date": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--rubik)"
+				},
+				"color": {
+					"text": "var(--wp--preset--color--dark)"
+				}
+			},
+			"core/group": {
+				"border": {
+					"radius": "6px"
+				}
 			}
 		},
 		"elements": {
