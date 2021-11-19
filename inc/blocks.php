@@ -1,12 +1,5 @@
 <?php
 
-if (function_exists('register_block_pattern_category')) {
-    register_block_pattern_category(
-        'patagonia',
-        array( 'label' => __('Patagonia', 'patagonia'))
-    );
-}
-
 add_action(
     'init',
     function () {

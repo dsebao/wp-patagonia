@@ -1,0 +1,112 @@
+/*
+Styles for post template inside the query loop
+*/
+
+.wp-block-post-template {
+  .wp-block-post {
+    &.format-standard {
+      border-radius: var(--wp--custom--border-radius);
+      background: var(white);
+      box-shadow: 0 20px 30px 0 rgba(0,0,0,0.2);
+      overflow: hidden;
+      position: relative;
+      transition: all 0.3s;
+
+      figure {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        img {
+          aspect-ratio: 4/4;
+          object-fit: cover;
+        }
+      }
+
+      .wp-block-group {
+        padding: 20px;
+        font-family: var(--wp--preset--font-family--primary);
+      }
+
+      .wp-block-post-date {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-size: var(--wp--preset--font-size--tiny);
+        color: var(--wp--preset--color--land)
+      }
+
+      .wp-block-post-title {
+        a {
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          &:after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            inset: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.card-template {
+    .format-standard {
+      figure {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        &:after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          background: rgb(68, 70, 65,0.3);
+          transition: all 0.3s;
+        }
+
+        img {
+          aspect-ratio: 3 / 4;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          transition: all 0.3s;
+        }
+      }
+
+      &:hover {
+        figure {
+          img {
+            transform: scale(1.02);
+          }
+
+          &:after {
+            background: rgb(68, 70, 65,0.4);
+          }
+        }
+      }
+
+      .wp-block-group {
+        position: relative;
+        z-index: 2;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 20px 20px 40px;
+
+        .wp-block-post-date {
+          border-radius: var(--wp--custom--border-radius);
+          width: fit-content;
+          padding: 5px 10px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

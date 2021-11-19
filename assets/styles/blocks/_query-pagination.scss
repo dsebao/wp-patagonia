@@ -1,0 +1,21 @@
+.wp-block-query-pagination {
+  font-family: var(--wp--preset--font-family--primary);
+  margin: 40px auto !important;
+
+  .wp-block-query-pagination-numbers {
+    display: flex;
+    .page-numbers {
+      width: 38px;
+      height: 38px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      text-decoration: none;
+
+      &.current {
+        border-radius: 100px;
+        background: var(--wp--preset--color--light-land);
+      }
+    }
+  }
+}

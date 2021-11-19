@@ -62,13 +62,13 @@
 			"fontFamilies": [
 				{
 					"fontFamily": "\"Rubik\", sans-serif",
-					"slug": "rubik",
+					"slug": "primary",
 					"name": "Rubik",
 					"google": "family=Rubik:wght@300;400;500;700"
 				},
 				{
 					"fontFamily": "\"Domine\", serif",
-					"slug": "domine",
+					"slug": "secondary",
 					"name": "Domine",
 					"google": "family=Domine:wght@400;700"
 				}
@@ -133,7 +133,8 @@
 			"line-height": {
 				"body": 1.6,
 				"heading": 1.1
-			}
+			},
+			"border-radius": "5px"
 		}
 	},
 	"styles": {
@@ -147,7 +148,7 @@
 					"text": "var(--wp--preset--color--white)"
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--rubik)",
+					"fontFamily": "var(--wp--preset--font-family--primary)",
 					"fontSize": "var(--wp--preset--typography--font-size--normal)"
 				},
 				"spacing": {
@@ -161,7 +162,7 @@
 			},
 			"core/paragraph": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--rubik)",
+					"fontFamily": "var(--wp--preset--font-family--primary)",
 					"lineHeight": "var(--wp--custom--line-height--body)"
 				},
 				"color": {
@@ -170,7 +171,7 @@
 			},
 			"core/heading": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--domine)",
+					"fontFamily": "var(--wp--preset--font-family--secondary)",
 					"lineHeight": "var(--wp--custom--line-height--heading)"
 				},
 				"color": {
@@ -196,14 +197,6 @@
 					}
 				}
 			},
-			"core/post-date": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--rubik)"
-				},
-				"color": {
-					"text": "var(--wp--preset--color--dark)"
-				}
-			},
 			"core/group": {
 				"border": {
 					"radius": "6px"
@@ -213,7 +206,7 @@
 		"elements": {
 			"h1": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--domine)",
+					"fontFamily": "var(--wp--preset--font-family--secondary)",
 					"fontWeight": "700",
 					"lineHeight": "var(--wp--custom--line-height--heading)",
 					"fontSize": "var(--wp--preset--font-size--gigantic)"
@@ -227,7 +220,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--rubik)",
+			"fontFamily": "var(--wp--preset--font-family--primary)",
 			"lineHeight": "var(--wp--custom--line-heigth--body)",
 			"fontSize": "var(--wp--preset--font-size--normal)"
 		},
