@@ -23,7 +23,6 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-
 /*
  * Text link styles.
  * Necessary until the following issue is resolved in Gutenberg:
@@ -33,10 +32,12 @@ img {
 a {
 	text-decoration-thickness: 1px;
 	text-underline-offset: 0.25ch;
+	transition: all 0.3s;
 
 	&:hover,
 	&:focus {
 		text-decoration-style: dashed;
+		filter: brightness(1.2);
 	}
 
 	:active {

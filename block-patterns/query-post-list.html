@@ -1,0 +1,36 @@
+<!--
+Title: Card post list
+Categories: Query
+Description: Query post with card styles
+-->
+<start-pattern>
+
+<!-- wp:group {"backgroundColor":"white","layout":{"inherit":true}} -->
+<div class="wp-block-group has-white-background-color has-background"><!-- wp:query {"queryId":57,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"displayLayout":{"type":"flex","columns":3},"backgroundColor":"white","layout":{"inherit":false}} -->
+<div class="wp-block-query has-white-background-color has-background"><!-- wp:spacer {"height":60} -->
+<div style="height:60px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:post-template -->
+<!-- wp:post-featured-image /-->
+
+<!-- wp:group -->
+<div class="wp-block-group"><!-- wp:post-date {"textColor":"green","fontSize":"tiny"} /-->
+
+<!-- wp:post-title {"isLink":true,"style":{"elements":{"link":{"color":{"text":"var:preset|color|dark"}}}},"textColor":"white"} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination {"style":{"elements":{"link":{"color":{"text":"var:preset|color|green"}}}},"textColor":"gray","layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:query-pagination-previous {"label":"←"} /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next {"label":"→"} /-->
+<!-- /wp:query-pagination -->
+
+<!-- wp:spacer {"height":60} -->
+<div style="height:60px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group -->
