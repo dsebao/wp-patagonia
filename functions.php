@@ -74,6 +74,7 @@ endif;
  */
 function patagonia_scripts()
 {
+    wp_enqueue_script('app', get_theme_file_uri('dist/app.js'), array(), [], true);
     // Enqueue theme stylesheet.
     wp_register_style('google-fonts', patagonia_get_google_fonts_url());
 
@@ -88,3 +89,15 @@ function patagonia_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'patagonia_scripts');
+
+function patagonia_register_block_editor()
+{
+    wp_enqueue_script(
+        'custom-blocks-settings',
+        get_theme_file_uri('dist/blocks.js'),
+        array( 'wp-blocks', 'wp-dom' ),
+        [],
+        true
+    );
+}
+add_action('enqueue_block_editor_assets', 'patagonia_register_block_editor');
