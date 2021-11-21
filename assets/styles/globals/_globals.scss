@@ -12,6 +12,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	margin: 0;
+	font-family: var(--wp--custom--bodyfont);
 }
 
 * {
@@ -30,6 +31,7 @@ img {
  */
 
 a {
+	color: var(--wp--custom--links--color);
 	text-decoration-thickness: 1px;
 	text-underline-offset: 0.25ch;
 	transition: all 0.3s;
