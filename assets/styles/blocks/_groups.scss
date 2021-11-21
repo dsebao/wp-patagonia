@@ -1,0 +1,46 @@
+/**
+ *  Group Row Switcher Variation CSS.
+ *  Allows for as many items to responsively
+ *  change without media queries.
+ *  @since 1.0.0
+ */
+.wp-block-group {
+  &.is-style-no-spacing {
+    padding: 0;
+  }
+
+  .is-style-row-switcher {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, auto));
+    justify-content: center;
+  }
+
+  &.is-style-row-switcher [class*="has-background"]:last-child {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &.alignwide.is-style-row-switcher > * {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
+  }
+
+  /**
+  *  Group Column Stack Variation CSS. Stacks
+  *  columns appropriately & responsively
+  *  without media queries.
+  */
+  &.is-style-column-stack,
+  &.is-style-column-stack.has-background {
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &.alignfull {
+    margin-left: calc((100vw - 100%) / -2);
+    margin-right: calc((100vw - 100%) / -2);
+  }
+}

@@ -1,0 +1,19 @@
+.wp-block-post-author {
+  margin-top: 20px !important;
+  align-items: center;
+
+  &__avatar {
+    .avatar {
+      border-radius: 100px;
+      width: 35px;
+    }
+  }
+
+  &__content {
+
+  }
+
+  &__name {
+    font-weight: normal;
+  }
+}

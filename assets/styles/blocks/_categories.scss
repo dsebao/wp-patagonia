@@ -1,0 +1,22 @@
+.wp-block-categories {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+
+  &.aligncenter {
+    justify-content: center;
+  }
+
+  &.is-categories-tags {
+    li {
+      a {
+        background: var(--wp--preset--color--green);
+        color: white;
+        text-decoration: none;
+        border-radius: var(--wp--custom--border-radius);
+        padding: 3px 10px;
+        font-size: var(--wp--preset--font-size--tiny);
+      }
+    }
+  }
+}
