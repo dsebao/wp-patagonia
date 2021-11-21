@@ -5,40 +5,50 @@ Description: Background image with text in block
 -->
 <start-pattern>
 
-<!-- wp:group {"backgroundColor":"light-green","layout":{"inherit":false,"contentSize":"1100px"}} -->
-<div class="wp-block-group has-light-green-background-color has-background"><!-- wp:spacer {"height":60} -->
-<div style="height:60px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:heading {"textAlign":"center","level":1} -->
-<h1 class="has-text-align-center">Call to action</h1>
-<!-- /wp:heading -->
-
-<!-- wp:separator {"color":"green"} -->
-<hr class="wp-block-separator has-text-color has-background has-green-background-color has-green-color"/>
-<!-- /wp:separator -->
-
-<!-- wp:spacer {"height":20} -->
-<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:group {"layout":{"contentSize":"800px"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"align":"center","textColor":"gray"} -->
-<p class="has-text-align-center has-gray-color has-text-color">The absolutely flat terrain with a few gorges and imperceptible undulations prevented us from capturing the light effects during most of the day.</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:spacer {"height":20} -->
-<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:buttons {"contentJustification":"center"} -->
-<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"land","textColor":"white"} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-land-background-color has-text-color has-background">VIEW MORE</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons -->
-
-<!-- wp:spacer {"height":60} -->
-<div style="height:60px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer --></div>
-<!-- /wp:group -->
+<!-- wp:group {"layout":{"inherit":false}} -->
+<div class="wp-block-group"><!-- wp:cover {"overlayColor":"white"} -->
+  <div class="wp-block-cover has-white-background-color has-background-dim"><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":40} -->
+  <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+  <!-- /wp:spacer -->
+  
+  <!-- wp:columns {"style":{"spacing":{"blockGap":"40px"}}} -->
+  <div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"top","textColor":"green"} -->
+  <div class="wp-block-column is-vertically-aligned-top has-green-color has-text-color"><!-- wp:paragraph {"textColor":"green"} -->
+  <p class="has-green-color has-text-color">WELCOME TO PATAGONIA</p>
+  <!-- /wp:paragraph -->
+  
+  <!-- wp:heading {"level":1,"textColor":"dark","fontSize":"gigantic"} -->
+  <h1 class="has-dark-color has-text-color has-gigantic-font-size">Block based theme</h1>
+  <!-- /wp:heading -->
+  
+  <!-- wp:separator -->
+  <hr class="wp-block-separator"/>
+  <!-- /wp:separator -->
+  
+  <!-- wp:paragraph {"textColor":"gray"} -->
+  <p class="has-gray-color has-text-color">The absolutely flat terrain with a few gorges and imperceptible undulations prevented us from capturing the light effects during most of the day. This forced us to travel extensively to take advantage of only a few hours a day, </p>
+  <!-- /wp:paragraph -->
+  
+  <!-- wp:paragraph {"textColor":"gray"} -->
+  <p class="has-gray-color has-text-color"><strong>In complete solitude and finding shelter in some lost school far from everything but close to the people. </strong></p>
+  <!-- /wp:paragraph -->
+  
+  <!-- wp:buttons -->
+  <div class="wp-block-buttons"><!-- wp:button -->
+  <div class="wp-block-button"><a class="wp-block-button__link">VIEW MORE</a></div>
+  <!-- /wp:button --></div>
+  <!-- /wp:buttons --></div>
+  <!-- /wp:column -->
+  
+  <!-- wp:column {"verticalAlignment":"center"} -->
+  <div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"id":258,"sizeSlug":"full","linkDestination":"none"} -->
+  <figure class="wp-block-image size-full"><img src="http://block-theme.local/wp-content/uploads/2021/11/Group-1.png" alt="" class="wp-image-258"/></figure>
+  <!-- /wp:image --></div>
+  <!-- /wp:column --></div>
+  <!-- /wp:columns -->
+  
+  <!-- wp:spacer {"height":40} -->
+  <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+  <!-- /wp:spacer --></div></div>
+  <!-- /wp:cover --></div>
+  <!-- /wp:group -->
