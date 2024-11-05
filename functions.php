@@ -1,7 +1,5 @@
 <?php
 
-require_once get_template_directory() . '/inc/blocks.php';
-
 if (!function_exists('patagonia_support')) :
     function patagonia_support()
     {
